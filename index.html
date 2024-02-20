@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Protest+Guerrilla&family=Sixtyfour&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+    <title>CRIPTOGRAFANDO</title>
+</head>
+<body>
+    <div id="conteudo">
+        <header>
+            <a href="https://www.alura.com.br/" target="_blank"><img class="logoAlura" src="./assets/img/Frame 6.png" alt="Logo da Alura: uma a estiloso"></a>
+            <ul id="botoes_de_cores" style="list-style-type: none;">
+                <li class="botao_rosa">
+                    <button class="butao_cores"></button>
+                </li>
+                <li class="botao_azul">
+                    <button class="butao_cores"></button>
+                </li>
+                <li class="botao_amarelo">
+                    <button class="butao_cores"></button>
+                </li>
+            </ul>
+
+            <div id="switch" onclick="toggleMode()">
+                <span></span>
+            </div>
+        </header>
+
+        <main>
+
+            <section id="primeira_secao">
+                <video autoplay muted loop>
+                    <source src="./assets/videos/blue_background_video.mp4" type="video/mp4">
+                </video>
+                <div id="primeira_secao-descricao_do_projeto">
+                    <h1>CRIPTOGRAFANDO</h1>
+                    <p>Sejam bem-vindos ao meu primeiro projeto oficialmente lançado. Esse site foi construído com todo aprendizado do programa ONE com a Alura, onde desenvolvi todas as minhas habilidades como programador.
+
+                        Esse site criptografa mensagens que você digita no campo logo abaixo (apenas digitar letras minusculas e sem acentos). O site é totalmente responsivo, podendo ser executado em computadores e celulares. Além disso, é possível alterar as cores padrões do site tanto em modo dark quanto em light</p>
+                </div>
+            </section>
+
+
+            <section id="segunda_secao">
+                <section id="manipulacao_texto">
+                    <textarea name="manipulacao_texto-area_de_digitacao" id="manipulacao_texto-area_de_digitacao" cols="30" rows="10"></textarea>
+                    <p class="avisos"><ion-icon name="alert-outline"></ion-icon>Apenas letras minúsculas e sem acento.</p>
+                    <div id="manipulacao_texto-botoes">
+                        <button type="button" id="click_criptografar">Criptografar</button>
+                        <button type="button" id="click_descriptografar">Descriptografar</button>
+                    </div>
+                </section>
+
+                <section id="visualizacao_texto">
+                    <img id="visualizacao_texto-imagen_ilustrativa" src="./assets/img/Blue - Sem Código.png" alt="Imagem ilustariva de um gato detetive e um texto que tem escrito: sem código">
+                    <div class="visualizacao_texto-texto_de_descricao">
+                        <h1 id="visualizacao_texto-texto_de_descricao-titulo">Nenhuma mensagem encontrada!</h1><br>
+                        <p  id="visualizacao_texto-texto_de_descricao-paragrafo">Digite um texto que você deseja criptografar ou descriptografar.</p>
+                    </div>
+                </section>
+                     
+                <section style="display: none;" id="visualizacao_texto-oculta">
+                    <div id="visualizacao_texto-texto_crip">
+                        <p id="visualizacao_texto-texto_crip-paragrafo" ></p>
+                    </div>
+                    <div id="visualizacao_texto-botoes">
+                        <button class="visualizacao_texto-botoes-botao">COPIAR</button>
+                        <button class="visualizacao_texto-botoes-botao">SALVAR</button>
+                    </div>
+
+                </section>
+
+            </section>
+
+            <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+            <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+        </main>
+
+        <footer>
+        </footer>
+    </div>
+    <script defer src="./code.js"></script>
+</body>
+</html>

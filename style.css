@@ -1,0 +1,456 @@
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+#conteudo {
+    width: 1229px;
+    margin: 50px 0px;
+    box-shadow: 10px 10px 20px rgba( 0, 0, 0, 0.4);
+}
+
+body {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    background: url("./assets/img/background/city blue.jpg") top center/cover;
+}
+
+header {
+    border-radius: 10px 10px 0px 0px;
+    background-color:  rgb(44, 44, 44);
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logoAlura {
+    margin: 20px 0px 10px 30px;
+    width: 50px;
+
+    box-shadow: 5px 5px 5px rgba( 0, 0, 0, 0.4);
+    border-radius: 10px;
+}
+
+.logoAlura:hover {
+    box-shadow: none;
+    background-color: rgb(85, 85, 85);
+}
+
+#botoes_de_cores {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.butao_cores {
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+}
+
+.botao_rosa {
+    background-color: #E32B63;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.botao_rosa button img {
+    width: 10px;
+}
+
+.botao_azul {
+    background-color: #40D3CB;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.botao_azul button img {
+    width: 10px;
+}
+
+.botao_amarelo {
+    background-color: #F5DA2E;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.botao_amarelo button img {
+    width: 10px;
+}
+
+#switch span {
+    padding: 10px 30px;
+    border-radius: 10px;
+    border: 4px solid black;
+
+    background-color: white;
+    box-shadow: 5px 5px 5px rgba( 0, 0, 0, 0.4);
+
+    margin: 20px 30px 10px 0px;
+}
+
+#switch span:hover {
+    border: 4px solid #E32B63;
+
+    box-shadow: 0px;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+/*PRIMEIRA SEÇÃO*/
+#primeira_secao {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    height: 450px;
+   
+
+    position: relative;
+}
+
+#primeira_secao video {
+    object-fit: contain;
+    object-fit: cover;
+    width: 100%;
+}
+
+#primeira_secao-descricao_do_projeto {
+    width: 1227px;
+    height: 450px;
+
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: absolute;
+}
+
+#primeira_secao-descricao_do_projeto h1 {
+    font-size: 80px;
+    color: white;
+}
+
+#primeira_secao-descricao_do_projeto p {
+    color: white;
+    font-size: 18px;
+    margin-inline: 150px;
+
+    padding: 15px;
+    border-radius: 10px;
+    background-color: rgba( 0, 0, 0, 0.15);
+}
+
+#primeira_secao-descricao_do_projeto p:hover {
+    background-color: rgba( 0, 0, 0, 0.6);
+}
+
+
+/*SEGUNDA SEÇÃO*/
+#segunda_secao {
+    display: flex;
+    height: 796px;
+    width: 1229px;
+    border-top: 30px solid #E32B63;
+}
+
+
+
+/*ESCREVER O TEXTO PARA CRIPTOGRAFAR OU DESCRIPTOGRAFAR*/
+#manipulacao_texto {
+    box-sizing: border-box;
+    width: 800px;
+}
+
+#manipulacao_texto-area_de_digitacao {
+    width: 100%;
+    height: 80%;
+    
+    font-size: 2.2em;
+    font-family: "Sixtyfour", sans-serif;
+    color: #E32B63;
+    border: 10px solid rgb(29, 29, 29);
+
+    background-color:  rgba(44, 44, 44, 0.8);
+    outline: none;  
+    resize: none;
+}
+
+.avisos {
+    position: absolute;
+    color: white;
+    z-index: 1;
+}
+
+#manipulacao_texto-botoes {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    padding: 40px;
+    background-color: rgba( 0, 0, 0, 0.4);
+    position: relative;
+}
+
+#click_criptografar {
+    padding: 25px 100px;
+    background-color: #E32B63;
+    color: white;
+    border-radius: 10px;
+}
+
+#click_descriptografar {
+    padding: 25px 100px;
+    background-color: #E32B63;
+    color: white;
+    border-radius: 10px;
+}
+
+/*VISUALIZAÇÃO DO TEXTO CRIPTOGRAFADO OU DESCRIPTOGRAFADO*/
+#visualizacao_texto {
+    box-sizing: border-box;
+    width: 450px;
+    background-color:  rgb(44, 44, 44);
+
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+#visualizacao_texto-imagen_ilustrativa {
+    width: 280px;
+}
+
+.visualizacao_texto-texto_de_descricao {
+    text-align: center;
+    margin: 0px 10%;
+    color: white;
+}
+
+.visualizacao_texto-texto_de_descricao p {
+    font-size: 1.3em;
+}
+
+/*VISUALIZAÇÃO OCULTA DO TEXTO CRIPTOGRAFADO OU DESCRIPTOGRAFADO*/
+
+#visualizacao_texto-oculta {
+    box-sizing: border-box;
+    width: 450px;
+    background-color:  rgb(44, 44, 44);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    align-items: center;
+   
+}
+
+#visualizacao_texto-texto_crip {
+    background-color:  rgb(73, 73, 73);
+    border-radius: 30px;
+    color: white;
+    height: 60%;
+    width: 80%;
+
+    overflow-wrap: break-word;
+    margin-top: 10%;
+
+    overflow: hidden;
+    overflow-y: scroll;
+    
+}
+
+#visualizacao_texto-texto_crip-paragrafo {
+    padding: 20px 10px;
+    font-size: 1em;
+}
+
+#visualizacao_texto-botoes {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 10%;
+}
+
+.visualizacao_texto-botoes-botao {
+    padding: 30px 100px;
+    border-radius: 15px;
+    font-size: 1em;
+    border: none;
+
+    background-color: #E32B63;
+    color: white;
+}
+
+.visualizacao_texto-botoes-botao:hover {
+    background-color: rgba( 0, 0, 0, 0.1);
+    color: #E32B63;
+}
+
+
+footer {
+    border: 1px solid blue;
+}
+
+/*MUDANÇA PARA AMBIENTE MOBILE*/
+
+@media screen and (max-width: 1250px) {
+
+    #conteudo {
+        width: 726px;
+    }
+
+    /*PRIMEIRA SEÇÃO*/
+
+    #primeira_secao-descricao_do_projeto {
+        width: 726px;
+    }
+
+    #primeira_secao-descricao_do_projeto h1 {
+        font-size: 2.5em;
+    }
+    
+    #primeira_secao-descricao_do_projeto p {
+        font-size: 18px;
+        margin-inline: 10%;
+    }
+
+    /*SEGUNDA SEÇÃO*/
+    #segunda_secao {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        width: auto;
+    }
+
+    #manipulacao_texto {
+        box-sizing: border-box;
+        width: 100%;
+    }
+
+    #manipulacao_texto-area_de_digitacao {
+        width: 100%;
+        height: 70%;
+    
+        font-size: 1.5em;
+    }
+
+    .manipulacao_texto-botoes-botao {
+        padding: 10px 30px;
+        border-radius: 10px;
+    }
+
+    #visualizacao_texto {
+        width: 100%;
+        height: 100%;
+    }
+
+    #visualizacao_texto-imagen_ilustrativa {
+        width: 20%;
+    }
+
+    #visualizacao_texto-oculta {
+        width: 100%;
+        height: 100%;
+    }
+
+    #visualizacao_texto-texto_crip {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+        height: 350px;
+        width: 300px;
+
+        margin-top: 10%;
+    }
+
+    #visualizacao_texto-texto_crip-paragrafo {
+        padding: 20px 10px;
+        width: 90%;
+        font-size: 1em;
+    }
+
+    .visualizacao_texto-botoes-botao {
+        margin-top: 10px;
+        padding: 10px 30px;
+        font-size: 10px;
+    }
+
+    #visualizacao_texto-botoes {
+        display: flex;
+        flex-direction: row;
+    }
+    
+}
+
+
+@media screen and (max-width: 730px) {
+
+    #primeira_secao-descricao_do_projeto {
+        width: auto;
+    }
+
+    #primeira_secao-descricao_do_projeto h1 {
+        font-size: 200%;
+        color: white;
+    }
+
+    #conteudo {
+        width: auto;
+    }
+
+    #click_criptografar {
+        padding: 5% 10%;
+    }
+    
+    #click_descriptografar {
+        padding: 5% 10%;
+    }
+
+    #visualizacao_texto-texto_crip {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+        height: 350px;
+        width: 300px;
+
+        overflow-wrap: break-word;
+        margin-top: 10%;
+    }
+
+
+}
+
